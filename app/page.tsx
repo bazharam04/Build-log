@@ -25,10 +25,10 @@ export default async function Home() {
     <main className="max-w-2xl mx-auto px-4 py-12">
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-white tracking-tight">
+        <h1 className="text-3xl font-bold text-[#2a2a2a] tracking-tight">
           Build Log
         </h1>
-        <p className="text-gray-500 text-sm mt-1">
+        <p className="text-[#8a8070] text-sm mt-1">
           A public wall where builders post what they shipped.
         </p>
       </div>
@@ -38,7 +38,7 @@ export default async function Home() {
 
       {/* Feed */}
       {logs.length === 0 ? (
-        <div className="text-center py-16 text-gray-600 text-sm">
+        <div className="text-center py-16 text-[#8a8070] text-sm">
           No builds logged yet. Be the first to ship something!
         </div>
       ) : (

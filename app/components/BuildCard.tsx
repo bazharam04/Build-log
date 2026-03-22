@@ -34,7 +34,7 @@ export default function BuildCard({ log }: { log: BuildLog }) {
   });
 
   return (
-    <article className="bg-[#161616] border border-[#2a2a2a] rounded-2xl p-5 flex gap-4 hover:border-[#3a3a3a] transition-colors">
+    <article className="bg-[#ede8de] border border-[#d6cfc2] rounded-xl p-5 flex gap-4 hover:border-[#c4bdb0] transition-colors">
       {/* Avatar */}
       <div
         className={`${avatarColor} flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-bold`}
@@ -45,18 +45,18 @@ export default function BuildCard({ log }: { log: BuildLog }) {
       {/* Content */}
       <div className="flex flex-col gap-1 min-w-0">
         <div className="flex items-center gap-2 flex-wrap">
-          <span className="font-bold text-white text-sm">{log.name}</span>
-          <span className="text-gray-600 text-xs">{timeAgo}</span>
+          <span className="font-semibold text-[#2a2a2a] text-sm">{log.name}</span>
+          <span className="text-[#8a8070] text-xs">{timeAgo}</span>
         </div>
 
-        <p className="text-gray-300 text-sm leading-relaxed">{log.description}</p>
+        <p className="text-[#4a4540] text-sm leading-relaxed">{log.description}</p>
 
         {log.project_link && (
           <a
             href={log.project_link}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 text-indigo-400 hover:text-indigo-300 text-xs font-medium mt-1 transition-colors group"
+            className="inline-flex items-center gap-1 text-[#7a6f5a] hover:text-[#2a2a2a] text-xs font-medium mt-1 transition-colors group"
           >
             View Project
             <svg
